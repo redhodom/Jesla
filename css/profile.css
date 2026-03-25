@@ -1,0 +1,114 @@
+/* RESET + BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* BODY LAYOUT */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+
+  background: url(../media/img/tesla-model-s.avif) center/cover no-repeat;
+}
+
+/* MAIN CONTENT CENTERING */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LOGO */
+.jesla-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #fafafa;
+  text-shadow: 0 0 20px #000;
+}
+
+/* CARD */
+.profile-card {
+  background: rgba(19, 10, 10, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease;
+}
+
+/* AVATAR */
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+/* BUTTON */
+.btn-jesla {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  width: 100px;
+  margin: 10px 5px;
+  transition: 0.3s ease;
+}
+
+.btn-jesla:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  margin-top: auto;
+  width: 100%;
+
+  background: rgba(19, 10, 10, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  body {
+    background: linear-gradient(to right, #000, #4a4a53);
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+
+  .btn-jesla {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .d-flex {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .jesla-logo {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,106 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* BODY */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* MAIN LAYOUT */
+.main-content {
+  flex: 1;
+}
+
+/* LOGO */
+.jesla-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #e60000;
+  text-shadow: 0 0 10px #e60000;
+}
+
+/* CARD STYLE */
+.card-box {
+  background: #111;
+  padding: 25px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+/* FORM */
+.form-control {
+  background: transparent;
+  border: 1px solid #e60000;
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.form-control:focus {
+  background: transparent;
+  border-color: #ff1a1a;
+  box-shadow: none;
+  color: #fff;
+}
+
+.form-label {
+  color: #e60000;
+}
+
+/* BUTTON */
+.btn-jesla {
+  background-color: #e60000;
+  border: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn-jesla:hover {
+  background-color: #b30000;
+}
+
+/* FAQ */
+.faq-box {
+  background: #111;
+  border-left: 4px solid #e60000;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: auto;
+  padding: 20px;
+  background: #111;
+  color: #aaa;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .jesla-logo {
+    font-size: 1.5rem;
+  }
+
+  .card-box {
+    padding: 20px;
+  }
+
+}
